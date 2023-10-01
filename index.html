@@ -12,13 +12,11 @@
     <link rel="manifest" href="images/site.webmanifest">
 </head>
 <body style="background-color:whitesmoke">
-    <header>
-        <svg height="210" width="500">
-            <line x1="0" y1="2" x2="20" y2="2" style="stroke:#444;stroke-width:2" />
-            <line x1="0" y1="8" x2="20" y2="8" style="stroke:#444;stroke-width:2" />
-            <line x1="0" y1="14" x2="20" y2="14" style="stroke:#444;stroke-width:2" />
-          </svg>
 
+
+    <header>
+
+        <svg><use href="#hamburger" x="5"  y="5"/></svg>
         <nav>
             <ul>
                 <li><a>Home</a></li>
@@ -28,7 +26,7 @@
         </nav>
     </header>
     <main>
-
+    
         <picture>
             <source media="(min-width: 801px)" srcset="images/hero-signing_constitution-2000-16x9.jpg">
             <source media="(min-width: 401px)" srcset="images/signing_constitution-800-4x3.jpg">
@@ -100,5 +98,13 @@
     <p></p>
 
 </footer>
+<svg height="210" width="500">
+    <symbol ID="hamburger">
+        <line x1="0" y1="2" x2="20" y2="2" style="stroke:#444;stroke-width:2" />
+        <line x1="0" y1="8" x2="20" y2="8" style="stroke:#444;stroke-width:2" />
+        <line x1="0" y1="14" x2="20" y2="14" style="stroke:#444;stroke-width:2" />
+    </symbol>
+</svg>
+
 </body>
 </html>
