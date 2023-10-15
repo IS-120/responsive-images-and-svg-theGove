@@ -6,6 +6,11 @@
 /*****************************************************/
 /* Always add your CSS below the reset CSS           */
 /*****************************************************/
+
+/*  fonts for use following Eli's example  Should ths be below the css reset?  */
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400&family=Quattrocento:wght@700&display=swap');
+
+
 *,
 *::before,
 *::after {
@@ -13,7 +18,7 @@
 }
 
 * {
-  /* margin: 0; */
+  margin: 0;
   /* this an experimental line-height; if it breaks, add line-height: 1.5 to body */
   line-height: calc(1em + 0.5rem);
 }
@@ -28,7 +33,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* img,
+img,
 picture,
 video,
 canvas,
@@ -36,7 +41,7 @@ svg {
   display: block;
   max-width: 100%;
   height: auto;
-} */
+}
 
 input,
 button,
@@ -83,3 +88,62 @@ img[src$="svg"] {
 }
 
 /************ add your CSS here *****************/
+
+:root{
+  --colonial-blue:#30405A;
+  --colonial-red:#5F220D;
+  --colonial-green:#29481C;
+  --colonial-cold:#BD9825;
+  --colonial-text-color:#4E4139;
+  --colonial-page-color:#F1EBD5;
+  
+}
+
+body{
+  font-family: 'Quattrocento Sans', sans-serif;
+  background-color: var(--colonial-page-color);
+  color:var(--colonial-text-color);
+  font-size: 16pt;
+  
+}
+
+h1,h2,h3,h4{
+  font-family: 'Quattrocento', serif;
+  padding:5rem 0 2rem 0;
+
+}
+
+h1{
+  color: var(--colonial-blue);
+  font-size: 5rem;
+}
+h2{
+  color: var(--colonial-red);
+  font-size: 3rem;
+}
+h3{
+  color: var(--colonial-green);
+  font-size: 2rem;
+}
+
+h3{
+  color: var(--colonial-text-color);
+  font-size: 1.3rem;
+}
+a{
+  color:var(--colonial-green);
+  text-decoration:none;
+}
+a[href]:hover{
+  color:var(--colonial-red);
+  text-decoration:underline;
+  background-color:#fff;
+}
+
+p{
+  line-height: 2rem;
+}
+
+main{
+  padding: 0 2rem;
+}
